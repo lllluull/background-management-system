@@ -2,7 +2,13 @@
     font-size: 30px;
     color: gold;
     background-color: #011427;
+    width: 100%;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+text-align: center
 }
 .NavContent{
-    height: 400px;
+    background-color: #011427;
+    height: 100vh;
 }

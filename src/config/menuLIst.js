@@ -12,6 +12,10 @@ export default  [
                 key: '/admin/ui/button'
             },
             {
+                title:'弹窗',
+                key: '/admin/ui/toast'
+            },
+            {
                 title:'输入框',
                 key: '/admin/ui/input'
             }

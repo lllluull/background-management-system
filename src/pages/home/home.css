@@ -1,0 +1,11 @@
+.home{
+    background-color: #ffffff;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+}

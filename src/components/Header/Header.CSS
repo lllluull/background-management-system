@@ -1,0 +1,32 @@
+.header{
+    background-color: #ffffff;
+    margin-bottom: 20px
+}
+.headerTop{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 3px solid rgb(23, 4, 87);
+    width: 100%;
+    font-size: 18px
+}
+.headerTopLeft{
+    text-align: right;
+    padding-right: 60px
+    
+}
+.headerTopRight{
+    color: red;
+    text-align: center;
+    font-size: 14px
+}
+.headerBottom{
+    height: 40px;
+    line-height: 40px;
+    
+}
+.headerBottomLeft{
+    text-align: right;
+}
+.headerBottomRight{
+    text-align: center
+}

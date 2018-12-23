@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './NavLeft.css'
 import menuLIst from '../../config/menuLIst'
 import { Menu} from 'antd';
+import {NavLink} from 'react-router-dom'
 const SubMenu = Menu.SubMenu;
 
 
@@ -25,7 +26,7 @@ export default class NavLeft extends Component {
                         )
                     }
                     return (
-                        <Menu.Item key={item.key}>{item.title}</Menu.Item>
+                        <Menu.Item key={item.key}><NavLink to={item.key}>{item.title} </NavLink></Menu.Item>
                     )
                     
                
@@ -35,13 +36,17 @@ export default class NavLeft extends Component {
 
     render() {
         return (
-            <div>
+            <div >
+                <div className='NavContent'>
                 <div className = 'NavHeader'>
                     导航栏头部
                 </div>                
-                <Menu theme='dark' className='NavContent'>
+                <Menu theme='dark' >
                     {this.state.MyMenu}
                 </Menu>
+
+                </div>
+                
             </div>    
         )
             
