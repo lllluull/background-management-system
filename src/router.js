@@ -7,6 +7,7 @@ import Button from './pages/Ui/Button'
 import Toast from './pages/Ui/Toast'
 import Home from './pages/home/home'
 import Nomatch from './pages/noMatch'
+import LoginForm from './pages/from'
 
 export default class MyRouter extends Component {
 
@@ -21,6 +22,7 @@ export default class MyRouter extends Component {
                             <Switch>
                                 <Route path='/admin/ui/button' component={Button}/>
                                 <Route path='/admin/ui/toast' component={Toast}/>
+                                <Route path='/admin/ui/input' component={LoginForm}/>
                                 <Route path='/admin/home' component={Home}/>
                                 <Route  component={Nomatch}/>
                             </Switch>
