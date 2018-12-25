@@ -1,9 +1,24 @@
 import React, { Component } from 'react'
-import {Card, Form, Button, Input, Icon} from 'antd'
+import {Card, Form, Button, Input, Icon, message} from 'antd'
 const FormItem = Form.Item
 
 
+
+
+
+
 class HorizontalLoginForm extends Component {
+
+  handlSubmit = () => {
+    this.props.form.validateFields((err, values) => {
+      if(!err){
+        message.success(`没有错误${values.userName}`)
+        console.log(this.props.form.getFieldValue("userName"))
+        
+      } 
+    })
+}
+
     render() {
         const {getFieldDecorator}  = this.props.form
         const formItemLayout = {
@@ -19,6 +34,8 @@ class HorizontalLoginForm extends Component {
         return (
             
             <Form>
+
+
                 <FormItem
                 label="用户名"
                 {...formItemLayout}
@@ -29,6 +46,10 @@ class HorizontalLoginForm extends Component {
             <Input  placeholder="Username"  style={{width: '300px'}}/>
           )}   
                 </FormItem>
+
+
+
+
                 <FormItem
                 label="密码"
                 {...formItemLayout}
@@ -39,6 +60,13 @@ class HorizontalLoginForm extends Component {
             <Input  placeholder="Password"  style={{width: '300px'}}/>
           )}   
                 </FormItem>
+                <FormItem>
+
+                  <Button type='default' onClick={this.handlSubmit}>提交</Button>
+
+                </FormItem>
+
+
             </Form>
 
 

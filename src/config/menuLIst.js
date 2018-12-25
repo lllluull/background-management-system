@@ -18,6 +18,10 @@ export default  [
             {
                 title:'输入框',
                 key: '/admin/ui/input'
+            },
+            {
+                title: '注册表单',
+                key: '/admin/ui/register'
             }
         ]
     },
