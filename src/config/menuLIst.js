@@ -22,6 +22,10 @@ export default  [
             {
                 title: '注册表单',
                 key: '/admin/ui/register'
+            },
+            {
+                title: '表格',
+                key: '/admin/ui/table'
             }
         ]
     },

@@ -9,6 +9,7 @@ import Home from './pages/home/home'
 import Nomatch from './pages/noMatch'
 import LoginForm from './pages/from'
 import RegisterForm from './pages/register'
+import MyTable from './pages/table'
 
 export default class MyRouter extends Component {
 
@@ -24,7 +25,8 @@ export default class MyRouter extends Component {
                                 <Route path='/admin/ui/button' component={Button}/>
                                 <Route path='/admin/ui/toast' component={Toast}/>
                                 <Route path='/admin/ui/input' component={LoginForm}/>
-                                <Route path='/admin/register' component={RegisterForm}/>
+                                <Route path='/admin/ui/register' component={RegisterForm}/>
+                                <Route path='/admin/ui/table' component={MyTable}/>
                                  <Route path='/admin/home' component={Home}/>
                                 <Route  component={Nomatch}/>
                             </Switch>
